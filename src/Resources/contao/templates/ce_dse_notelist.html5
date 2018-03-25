@@ -1,0 +1,30 @@
+<div class="<?= $this->class ?> block"<?= $this->cssID ?><?php if ($this->style): ?> style="<?= $this->style ?>"<?php endif; ?>>
+    <div class="wishlist table-responsive">
+        <!-- ToDo: noch anpassen -->
+        <a href="#" id="clearWishlist-<?= $this->id ?>">Merkliste leeren</a>
+        <table id="wishlist-table-<?= $this->id ?>" class="table">
+            <thead>
+                <tr>
+                    <th scope="col">pId</th>
+                    <th scope="col">pUrl</th>
+                    <th scope="col">pAmount</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody class="items">
+                <tr class="item item-clone">
+                    <td class="pId"></td>
+                    <td class="pUrl"></td>
+                    <td class="pAmount"></td>
+                    <td class="actions">
+                        <a href="#" class="removeProduct">entfernen</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="no-data-message">
+        <p>Keine Produkte auf der Merkliste</p>
+        <p>Hier geht es zu den Produkten: <a href="/elemente.html">Klick</a></p>
+    </div>
+</div>

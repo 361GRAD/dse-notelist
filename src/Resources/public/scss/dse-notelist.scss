@@ -1,0 +1,19 @@
+.ce_dse_notelist {
+  &.no-data {
+    .wishlist {
+      display: none;
+    }
+  }
+  &:not(.no-data) {
+    .wishlist {
+      & + .no-data-message {
+        display: none;
+      }
+    }
+  }
+  .wishlist {
+    .item-clone {
+      display: none;
+    }
+  }
+}

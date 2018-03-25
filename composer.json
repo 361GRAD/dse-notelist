@@ -1,0 +1,41 @@
+{
+  "name": "361GRAD-Elements/dse-notelist",
+  "type": "contao-bundle",
+  "description": "361GRAD-Element - notelist extension",
+  "license": "proprietary",
+  "homepage": "http://361.de",
+  "authors": [
+    {
+      "name": "Markus Häfner",
+      "email": "markus@361.de",
+      "homepage": "http://361.de",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "contao/core-bundle": "~4.4"
+  },
+  "require-dev": {
+    "phpcq/all-tasks": "^1.1"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "npm install --save jquery.redirect"
+    ],
+    "post-update-cmd": [
+      "npm install --save jquery.redirect"
+    ]
+  },
+  "autoload": {
+    "psr-4": {
+      "Dse\\NotelistBundle\\": "src"
+    }
+  },
+  "extra": {
+    "contao-manager-plugin":"Dse\\NotelistBundle\\ContaoManager\\Plugin",
+    "branch-alias": {
+      "dev-master": "1.2.x-dev"
+    }
+  }
+}
